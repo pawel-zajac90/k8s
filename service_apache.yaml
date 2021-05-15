@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apache-test-service
+spec:
+  selector:
+    app: apache-test
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
